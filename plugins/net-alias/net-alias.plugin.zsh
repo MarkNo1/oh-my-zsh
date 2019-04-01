@@ -34,10 +34,10 @@ function Copy() {
 LoadConfiguration(){
   cfg=".net-alias.cfg"
   if [ -f  "$HOME/$cfg" ]; then
-    source "${cfg}"
-    echo "[net-alias] $emoji[relieved_face]"
+    source "$HOME/$cfg"
+    echo "[net-alias] $emoji[winking_face]"
   else
-    echo "[net-alias]: No $cfg in $HOME."
+    echo "[net-alias]: No $cfg in $HOME. $emoji[dizzy_face]"
   fi
 }
 
