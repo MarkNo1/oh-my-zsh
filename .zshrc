@@ -71,6 +71,8 @@ plugins=(git
         zsh-syntax-highlighting
         colorize
         net-alias
+        emoji
+        ros
         )
 
 source $ZSH/oh-my-zsh.sh

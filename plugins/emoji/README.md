@@ -133,3 +133,7 @@ This does *not* mean that it should use Gemoji at run time. None of the `zsh` pl
 One of the newer features of Unicode emoji is the ability to use the "Zero-Width Joiner" character to compose multiple emoji characters in to a single "emoji ligature" glyph. For example, this is [how Apple supports "family" emoji with various genders and skin tones](https://www.unicode.org/reports/tr51/index.html#ZWJ_Sequences).
 
 These are a pain to write out (and probably worse to read), and it might be convenient to have a couple functions for concisely composing them, if wider support for them appears.
+
+
+# Include Anacona
+. ~/.anaconda
