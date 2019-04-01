@@ -112,4 +112,4 @@ export LANG=en_US.UTF-8
 #. ~/.net-aliases-cfg
 
 # Anaconda
-. ~/.anaconda
+# . ~/.anaconda
