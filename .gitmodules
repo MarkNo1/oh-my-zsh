@@ -4,3 +4,6 @@
 [submodule "plugins/zsh-autosuggestions"]
 	path = plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "plugin/powerlevel9k"]
+	path = plugin/powerlevel9k
+	url = https://github.com/bhilburn/powerlevel9k.git
