@@ -7,6 +7,14 @@
 ------------------------------------------------------------------------------
 '
 
+RED="$(tput setaf 1)"
+GREEN="$(tput setaf 2)"
+YELLOW="$(tput setaf 3)"
+BLUE="$(tput setaf 4)"
+BOLD="$(tput bold)"
+NORMAL="$(tput sgr0)"
+
+
 function Login() {
   echo -e "Login into ${1}"
   xhost +
@@ -19,7 +27,7 @@ SetConnection() {
     address="$3@${NETMASK}.$2"
     alias "$1"="Login ${address}"
     export "${NAME}_ADDR"=$address
-    echo -e "Fast connection to \e[1;28m$1\e[0m : $address  "
+    echo -e "Fast connection to $BLUE $1 $NORMAL : $address  "
   else
     echo -e "No env NETMASK is setted"
   fi

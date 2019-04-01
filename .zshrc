@@ -30,7 +30,7 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time background_jobs time)
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
-s
+
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
 
