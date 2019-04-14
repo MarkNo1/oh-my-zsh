@@ -16,16 +16,21 @@ NORMAL="$(tput sgr0)"
 
 
 function Login() {
-  echo -e "Login into ${1}"
+  if [[ -n "$2" ]]; then
+    port=$2
+  else
+    port=22
+  fi
+  echo -e "Login into ${1} with port ${2}"
   xhost +
-  ssh -2 -XY ${1}
+  ssh -2 -p${port} -XY ${1}
 }
 
 SetConnection() {
   NAME=$(echo "$1" | tr '[a-z]' '[A-Z]')
   if [[ $NETMASK ]]; then
     address="$3@${NETMASK}.$2"
-    alias "$1"="Login ${address}"
+    alias "$1"="Login ${address} ${4}"
     export "${NAME}_ADDR"=$address
     echo -e "$BLUE $1 $NORMAL : $address  "
   else
@@ -50,4 +55,3 @@ LoadConfiguration(){
 }
 
 LoadConfiguration
-
